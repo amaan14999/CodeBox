@@ -13,7 +13,7 @@ body {
   width: 15rem;
 }
 .nav-link {
-  color: #6f61c0;
+  color: #fff;
   font-family: "Albert Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
@@ -23,7 +23,7 @@ body {
 }
 .navbar {
   padding: 20px 30px;
-  border-bottom: 1px solid #322653;
+  /* border-bottom: 1px solid #322653; */
 }
 
 .all-div {
@@ -78,7 +78,7 @@ body {
   padding: 5px 20px;
 
   font-family: "DM Sans", sans-serif;
-  border-radius: 5px 5px 0 0;
+  border-radius: 6px 6px 0 0;
 }
 .css-code p,
 .js-code p {

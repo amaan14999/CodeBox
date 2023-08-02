@@ -1,48 +1,110 @@
-@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-body {
-  background-color: #fff;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background-color: black;
+}
+
 .navbar-brand img {
   width: 15rem;
 }
 .nav-link {
-  color: #333333;
+  color: #6f61c0;
   font-family: "Albert Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
 }
-.editor {
-  width: 100%;
+.nav-link:hover {
+  color: #6f61c0;
+}
+.navbar {
+  padding: 20px 30px;
+  border-bottom: 1px solid #322653;
+}
+
+.all-div {
+  height: 600px;
+  padding: 20px;
+}
+
+.columns {
   display: flex;
-  height: calc(100vh - 100px);
+  flex-wrap: wrap;
 }
 
-.editor .code {
-  width: 500px;
-  height: 100%;
-  /* border-right: 1px solid #333333; */
+.column:first-child {
+  flex: 2;
+  border-right: 10px solid black;
 }
 
-.editor .preview {
-  width: calc(100% - 500px);
-  height: 100%;
-}
-.editor .preview iframe {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #333333;
-
-  outline: none;
+.column:last-child {
+  flex: 1;
 }
 
-textarea {
-  width: 100%;
-  /* height: 33.33%; */
-  border-bottom: 1px solid #333333;
-}
 .CodeMirror {
-  height: 241px;
+  height: 200px !important;
 }
-.text {
-  height: 33.33%;
+
+.show-code {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: white;
+}
+
+.editror {
+  overflow: hidden;
+}
+.html-code,
+.css-code,
+.js-code {
+  max-width: 620px;
+}
+
+.html-code p,
+.css-code p,
+.js-code p {
+  background-color: #323232;
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 5px 20px;
+
+  font-family: "DM Sans", sans-serif;
+  border-radius: 5px 5px 0 0;
+}
+.css-code p,
+.js-code p {
+  margin-top: 10px;
+}
+
+.html-code p {
+  border-top: 3px solid #fc490b;
+}
+.css-code p {
+  border-top: 3px solid #2196f3;
+}
+.js-code p {
+  border-top: 3px solid #ffdf00;
+}
+
+.editor-icon {
+  width: 20px;
+}
+
+@media (max-width: 680px) {
+  .column:first-child {
+    flex-basis: 100%;
+    border-right: none;
+  }
+  .show-code {
+    height: 300px;
+  }
 }

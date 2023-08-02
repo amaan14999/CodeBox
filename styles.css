@@ -25,7 +25,14 @@ body {
   padding: 20px 30px;
   /* border-bottom: 1px solid #322653; */
 }
-
+.navbar-toggler {
+  border: none;
+  color: white;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
 .all-div {
   height: 600px;
   padding: 20px;
